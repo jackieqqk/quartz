@@ -22,8 +22,7 @@ import org.quartz.JobExecutionException;
 public class HelloJob implements Job {
 	private int count;
 	@Override
-	public void execute(JobExecutionContext context)
-			throws JobExecutionException {
+	public void execute(JobExecutionContext context) throws JobExecutionException {
 		System.out.println("Hello world!");
 		count++;
 	}
